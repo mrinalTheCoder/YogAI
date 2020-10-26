@@ -125,6 +125,7 @@ export class YogControl extends React.Component {
   }
 
   async startDetection(e) {
+    document.querySelector("button").remove();
     const net = await posenet.load({
       architecture: 'ResNet50',
       outputStride: 32,
@@ -133,7 +134,6 @@ export class YogControl extends React.Component {
       quantBytes: 2
     });
     this.detectPoseInRealTime(this.video, net, this.canvas.getContext('2d'));
-    document.querySelector("button").remove();
   }
 
   async detectPoseInRealTime(video, net, ctx) {
