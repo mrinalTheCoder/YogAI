@@ -1,4 +1,5 @@
 import React from 'react';
+// import logo from "logo.png";
 import * as posenet from 'posenet';
 
 import {drawKeypoints, drawSkeleton} from './demo_util.js';
