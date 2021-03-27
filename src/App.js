@@ -5,7 +5,7 @@ import {YogControl} from "./yog-control.js";
 function App() {
   return (
     <div>
-      <img src={require("./logo.png")} />
+      <img src={require("./logo.png")} alt={"YogAI"} />
       <YogControl />
     </div>
   );
